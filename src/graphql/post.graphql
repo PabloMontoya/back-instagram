@@ -1,0 +1,22 @@
+#import User from './user.graphql'
+#import Comment from './comment.graphql'
+
+type Post {
+    _id:ID
+    createdBy:User
+    description:String
+    image_url:String
+    liked_by:[User]
+    comments:[Comment]
+}
+
+input PostInput {
+    description:String!
+    image_url:String!
+}
+
+
+
+
+
+
